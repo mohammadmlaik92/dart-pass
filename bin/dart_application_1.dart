@@ -1,5 +1,7 @@
 import 'dart:math';
-
+class Text extends View {
+  Text(int id, this.content, {Color? color})
+}
 class Color {
   Color(this.value);
   final int value;
@@ -29,6 +31,8 @@ void main() {
 
   int id = Random().nextInt(10000);
 
+  var helloText = Text(<random id>, content: 'Hello');
+  
   print('hello: $helloText');
 }
 
